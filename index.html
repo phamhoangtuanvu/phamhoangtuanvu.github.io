@@ -1,12 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/avatar.jpg">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/javascript" src="./assets/js/main.js" defer></script>
+    <title>Phạm Hoàng Tuấn Vũ</title>
 </head>
+
 <body>
-    ALo
+
+    <div class="bg">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="portfolio-detail" id="detail">
+    </div>
+
+    <div id="main">
+
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+
+        <div class="header">
+            <div class="avatar">
+                <img class="" src="./assets/img/avatar1.jpg" alt="">
+            </div>
+
+            <div class="info">
+                <h2 class="name">Tuấn Vũ</h2>
+                <h4 class="position">Front-end Developer</h4>
+            </div>
+
+
+            <div class="menu">
+                <ul>
+                    <li data-index="0" class="active">
+                        <span class="menu-icon"><i class="fa-solid fa-house"></i></span>
+                        <span class="menu-text">Home</span>
+
+                    </li>
+                    <li data-index="1" class="">
+
+                        <span class="menu-icon"><i class="fa-solid fa-user"></i></span>
+                        <span class="menu-text">About Me</span>
+                    </li>
+                    <li data-index="2" class="">
+                        <span class="menu-icon"><i class="fa-solid fa-file"></i></span>
+                        <span class="menu-text">Resume</span>
+                    </li>
+                    <li data-index="3" class="">
+                        <span class="menu-icon"><i class="fa-solid fa-suitcase"></i></span>
+                        <span class="menu-text">Portfolio</span>
+                    </li>
+                    <li data-index="4" class="">
+                        <span class="menu-icon"><i class="fa-solid fa-envelope"></i></span>
+                        <span class="menu-text">Contact</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+
+            <div class="download">
+                <button class="download--btn">Download CV</button>
+            </div>
+        </div>
+
+        <div class="container ">
+            <div class="content scrollbar" id="home" data-index="0">
+                <div class="caption">
+                    <h2>Phạm Hoàng Tuấn Vũ</h2>
+                    <h4>Frontend Developer</h4>
+                </div>
+            </div>
+
+            <div class="content scrollbar" id="about" data-index="1">
+                <h1>About Me</h1>
+                <div class="introduction">
+                    <div class="introduction--text">
+                        <p>Looking for a challenging role to use my technical skills can contribute to the growth of the
+                            company as well as enhance
+                            my knowledge by learning new things. </p>
+                    </div>
+                    <div class="introduction--info">
+                        <ul>
+                            <li><b>Name:</b> Phạm Hoàng Tuấn Vũ</li>
+                            <li><b> Skype: </b> tuanvu.iris</li>
+                            <li><b> Email: </b> tuanvu.iris@gmail.com</li>
+                            <li><b> Phone: </b> 0932 420 143</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2>What I do</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <div class="skill--icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="skill--text">
+                            <h3>Front-end Web Development</h3>
+                            <p>HTML, CSS, JS, ReactJs</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill--icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="skill--text">
+                            <h3>Digital Marketing</h3>
+                            <p>Facebook Ads, Google Ads, SEO, Content Creator</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill--icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+                        <div class="skill--text">
+                            <h3>Wordpress Web </h3>
+                            <p>Build website using Wordpress CMS</p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill--icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="skill--text">
+                            <h3>Graphic Design</h3>
+                            <p>Adobe Photoshop, Adobe Illustrator</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content scrollbar" id="resume" data-index="2">
+                <h1>Resume</h1>
+
+                <div class="flex-box">
+                    <div class="timeline">
+                        <h3>Education</h3>
+
+                        <div class="timeline_item">
+                            <div class="left-part">
+                                <h4 class="date">9/2017 - 2/2022</h4>
+                                <p class="note"></p>
+                            </div>
+                            <div class="divider">
+
+                            </div>
+                            <div class="right-part">
+                                <div class="title">Ton Duc Thang University</div>
+                                <p class="desc">
+                                    Specialization: Infomation System
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3>Experience</h3>
+
+                        <div class="timeline_item">
+                            <div class="left-part">
+                                <h4 class="date">9/2020 - 10/2021</h4>
+                                <p class="note"></p>
+                            </div>
+                            <div class="divider">
+
+                            </div>
+                            <div class="right-part">
+                                <div class="title">TIANCHAO DAI NAM</div>
+                                <p class="desc"><b>Role:</b> IT & Marketing
+                                    <br>
+                                    - Planning and setup Google Ads and Facebook Ads campaigns<br>
+                                    - Build and manage website ngoaithatdainam.com using Wordpress<br>
+                                    - Edit website interface using HTML, CSS and JS <br>
+                                    - Design leaflets, posters, banners,... for promotion campaigns<br>
+                                    - Create content for website, social media<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="left-part">
+                                <h4 class="date">3/2020 - 8/2020</h4>
+                                <p class="note"></p>
+                            </div>
+                            <div class="divider">
+
+                            </div>
+                            <div class="right-part">
+                                <div class="title">TIN HOLDINGS</div>
+                                <p class="desc"><b>Role:</b> IT & Marketing Collaborator
+                                    <br>
+                                    - Build backlink using PBN to SEO offpage <br>
+                                    - Optimize website to SEO onpage<br>
+                                    - Setup Google Ads campaigns<br>
+                                    - Edit website interface using HTML, CSS and JS <br>
+                                    - Design standee, posters, banners,... for promotion campaigns<br>
+                                    - Create content for PBN and landing page<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="left-part">
+                                <h4 class="date">02/2019 - 11/2019</h4>
+                                <p class="note"></p>
+                            </div>
+                            <div class="divider">
+
+                            </div>
+                            <div class="right-part">
+                                <div class="title">IRISGROUP</div>
+                                <p class="desc"><b>Role:</b> IT & Marketing
+                                    <br>
+                                    - Build website irisgroup.com.vn using HTML, CSS<br>
+                                    - Design leaflets, posters, banners,... for promotion campaigns<br>
+                                    - Planning and development for the product<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ability">
+                        <h3>Development Skills</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>ReactJs</li>
+                        </ul>
+                        <h3>Digital Marketing Skills</h3>
+                        <ul>
+                            <li>Facebook Ads</li>
+                            <li>Google Ads</li>
+                            <li>SEO</li>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                        </ul>
+                        <h3>Other Skills</h3>
+                        <ul>
+                            <li>Wordpress</li>
+                            <li>Premiere</li>
+                            <li>Content Creator</li>
+                        </ul>
+                        <h3>Certificates</h3>
+                        <ul>
+                            <li>Toeic: 765</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="certificate">
+                    <h3>Certificates</h3>
+                    <div class="certi-list">
+                        <div class="certi-box">
+                            <img src="./assets/img/toeic.jpg" alt="">
+                            <div class="desc">
+                                <div class="title">Toeic</div>
+                                <div class="text">Score: 765</div>
+                                <div class="date">24/04/2021</div>
+                            </div>
+                        </div>
+
+                        <div class="certi-box">
+                            <img src="./assets/img/toeic.jpg" alt="">
+                            <div class="desc">
+                                <div class="title">Kỹ sư</div>
+                                <div class="text">Score: </div>
+                                <div class="date">Pending</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="content scrollbar" id="portfolio" data-index="3">
+                <h1>Portfolio</h1>
+                <div class="portfolio-tabs">
+                    <div class="filter">
+                        <ul>
+                            <li class="active" data-tag="all">All</li>
+                            <li data-tag="frontend">Front-end</li>
+                            <li data-tag="reactjs">Reactjs</li>
+                            <li data-tag="python">Python</li>
+                            <li data-tag="wordpress">Wordpress</li>
+                            <li data-tag="design">Graphic Design</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-list"></div>
+
+                </div>
+            </div>
+
+            <div class="content scrollbar" id="contact" data-index="4">
+                <h1>Contact</h1>
+
+                <div class="flex-box">
+                    <div class="info">
+                        <div class="info-block">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <p class="text">tuanvu.iris@gmail.com</p>
+                        </div>
+                        <div class="info-block">
+                            <span class="icon"><i class="fa-brands fa-skype"></i></span>
+                            <p class="text">tuanvu.iris</p>
+                        </div>
+                        <div class="info-block">
+                            <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+                            <p class="text">phamhoangtuanvu</p>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <h3>Contact me</h3>
+                        <form action="">
+                            <input name="name" type="text" placeholder="Your name">
+                            <input name="email" type="email" placeholder="Email">
+                            <input name="phone" type="text" placeholder="Phone number">
+                            <textarea name="msg" id="" cols="100%" rows="10" placeholder="Message"></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu and Arrow -->
+        <div class="nav">
+            <div class="arrow">
+                <ul>
+                    <li id="left"><i class="fa-solid fa-arrow-left"></i></li>
+                    <li id="right"><i class="fa-solid fa-arrow-right"></i></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+    </script>
 </body>
+
 </html>
